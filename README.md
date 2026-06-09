@@ -15,18 +15,18 @@
 ---
 
 ## 1. Environmental Requirements for Carnation Growth
-[cite_start]The table below documents the baseline characteristics required to optimize carnation growth in Flora Farms' controlled greenhouse environments[cite: 13, 38]:
+The table below documents the baseline characteristics required to optimize carnation growth in Flora Farms' controlled greenhouse environments:
 
 | Metric | Optimal Range / Value | Characteristics & System Implications |
 | :--- | :--- | :--- |
-| **a. Optimal Temperature Range** | [cite_start]**$18^\circ\text{C} - 24^\circ\text{C}$** (Day) <br>**$10^\circ\text{C} - 15^\circ\text{C}$** (Night) [cite: 7] | [cite_start]Highly temperature-sensitive[cite: 5, 6]. [cite_start]Night heating keeps values optimal[cite: 45]. |
-| **b. Optimal Relative Humidity Range** | [cite_start]**60% - 70%** [cite: 8] | [cite_start]Prevents structural brittleness and limits fungal growth[cite: 5, 6]. |
-| **c. Recommended Soil Type** | [cite_start]**Rich Sandy Loam / Loamy Sand** [cite: 9] | [cite_start]Critical for highly sensitive root drainage requirements[cite: 5, 6]. |
-| **d. Optimal Soil Moisture Content** | [cite_start]**60% - 65%** water capacity [cite: 10] | [cite_start]Managed via micro-drip networks to avoid root rot[cite: 5, 6, 40]. |
-| **e. Optimal Soil pH Range** | [cite_start]**5.5 - 6.5** [cite: 11] | [cite_start]Keeps essential micro-nutrients soluble[cite: 5, 6]. |
-| **f. Sunlight Exposure Hours** | [cite_start]**13 hours** (Photoperiod) [cite: 12] | [cite_start]Facultative long-day plants requiring ample light[cite: 5, 6, 41]. |
+| **a. Optimal Temperature Range** |**$18^\circ\text{C} - 24^\circ\text{C}$** (Day) <br>**$10^\circ\text{C} - 15^\circ\text{C}$** (Night) | Highly temperature-sensitive. Night heating keeps values optimal. |
+| **b. Optimal Relative Humidity Range** |**60% - 70%** | Prevents structural brittleness and limits fungal growth. |
+| **c. Recommended Soil Type** | **Rich Sandy Loam / Loamy Sand**  | Critical for highly sensitive root drainage requirements. |
+| **d. Optimal Soil Moisture Content** | **60% - 65%** water capacity | Managed via micro-drip networks to avoid root rot. |
+| **e. Optimal Soil pH Range** | **5.5 - 6.5**  | Keeps essential micro-nutrients soluble. |
+| **f. Sunlight Exposure Hours** | **13 hours** (Photoperiod)  | Facultative long-day plants requiring ample light. |
 
-> [cite_start]**LPG Monitoring Note:** The greenhouse heating system runs on LPG[cite: 45]. [cite_start]The embedded architecture utilizes the MQ-5 sensor to monitor for accidental leaks of methane, butane, or propane to protect crops and ensure site safety[cite: 14, 22].
+> **LPG Monitoring Note:** The greenhouse heating system runs on LPG. The embedded architecture utilizes the MQ-5 sensor to monitor for accidental leaks of methane, butane, or propane to protect crops and ensure site safety.
 
 ---
 
