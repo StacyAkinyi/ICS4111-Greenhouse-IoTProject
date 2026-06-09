@@ -56,15 +56,15 @@ To monitor the criteria above and handle the greenhouse environment safely, the 
 
 ### Architecture A: Single-Node Multi-Sensor Topography
 * **Description:** A standalone master node configuration. One single ESP32S reads telemetry data from both the MQ-5 Gas Sensor (via a voltage divider into an analog pin) and the DHT22 (via a digital pin with a 4.7kΩ pull-up resistor) while directly updating the local 1.3" OLED via an I2C interface (SDA/SCL pins).
-* **Circuit Diagram:** ![Architecture A Diagram](images/Architecture_a.png)
+* **Circuit Diagram:** ![Architecture A Diagram](images/Architechture_a.png)
 
 ### Architecture B: Interfaced Dual-Node Topography
 * **Description:** Distributed processing configuration. One ESP32S functions as a dedicated safety node monitoring the MQ-5 sensor. It directly interfaces with a second standalone ESP32S node that reads the DHT22 climate sensor using standard serial UART communication protocols (TX to RX, RX to TX, common Ground).
-* **Circuit Diagram:** ![Architecture B Diagram](images/Architecture_b.png)
+* **Circuit Diagram:** ![Architecture B Diagram](images/Architechture_b.png)
 
 ### Architecture C: Relay-Isolated Dual-Node Topography
 * **Description:** Hardware-isolated signaling configuration. One ESP32S samples the ambient climate using the DHT22 sensor. If parameters fall outside of threshold parameters, it changes the state of a 5V Low-Level Trigger Relay. The relay contacts close an input pin loop on a secondary ESP32S node which is actively handling gas safety with the MQ-5 sensor.
-* **Circuit Diagram:** ![Architecture C Diagram](images/Architecture_c.png)
+* **Circuit Diagram:** ![Architecture C Diagram](images/Architechture_c.png)
 
 ---
 
