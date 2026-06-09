@@ -80,7 +80,7 @@ To monitor the criteria above and handle the greenhouse environment safely, the 
   * **Member 6 - James:** Compiled agricultural data regarding Carnation micro-climates and soil parameters.
 
 ### Team Evidence Artifact
-![Group Collaboration Proof](group_evidence.png)
+![Group Collaboration Proof](images/group_evidence.png)
 
 
 
