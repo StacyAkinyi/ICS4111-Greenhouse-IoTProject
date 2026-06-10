@@ -37,7 +37,7 @@ The table below documents the researched baseline characteristics required to op
 To monitor the criteria above and handle the greenhouse environment safely, the following hardware bill of materials is designated for prototyping:
 
 * **Microcontroller:** [ESP32S DevKIT WiFi + BLE Module (30-Pin)](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)
-  * *Role:* Acts as the core microcontroller edge node. It reads sensor data, drives the display, and manages communication over the greenhouse WiFi router.
+  * *Role:* Acts as the core microcontroller edge node. It reads sensor data, drives the display and manages communication over the greenhouse WiFi router.
 * **Display:** [1.3" White IIC 128X64 OLED LCD](https://www.adafruit.com/product/938)
   * *Role:* Provides local telemetry visualization inside the greenhouse for field operators.
 * **Climate Sensor:** [DHT22 AM2302 Temperature and Humidity sensor](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)
@@ -46,7 +46,7 @@ To monitor the criteria above and handle the greenhouse environment safely, the 
   * *Role:* Detects traces of LPG leaked from the greenhouse's space heaters.
 * **Actuator Control:** [5V 1-Channel Low Level Trigger Relay Module](https://www.songle.com)
   * *Role:* Operates as an electronic switch to control automated equipment like fans or heaters.
-* **Prototyping Accessories:** Full-sized breadboards, male-to-male/male-to-female jumper wires, pull-up resistors for the I2C bus lines, and a voltage divider network (1kΩ and 2kΩ resistors) to drop the MQ-5's 5V analog signal output safely down to the ESP32's 3.3V ADC tolerance.
+* **Prototyping Accessories:** Full-sized breadboards, male-to-male/male-to-female jumper wires, pull-up resistors for the I2C bus lines and a voltage divider network (1kΩ and 2kΩ resistors) to drop the MQ-5's 5V analog signal output safely down to the ESP32's 3.3V ADC tolerance.
 
 ---
 
