@@ -93,17 +93,17 @@ This deliverable details the firmware logic, sensor integration, and communicati
 
 ## 3. System Modelling & Prototyping
 #### Architecture A Circuit Simulation
-**Simulation Screenshot:** 
+- **Simulation Screenshot:** 
 ![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
-**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+- **Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
 #### Architecture A Physical Prototype
 - **Hardware Setup:** ![Physical Breadboard Setup](images/Architecture_A_physical.jpeg)
 #### Architecture B Physical Prototype
 - **Hardware Setup:** ![Physical Breadboard Setup](images/Architecture_B_physical.jpeg)
 #### Architecture C Circuit Simulation
-**Simulation Screenshot:** 
+- **Simulation Screenshot:** 
 ![Architecture C simulation Diagram](images/Architechture_A_Simulation.png)
-**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+- **Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
 
 ## 4. Code Implementation
 ### This is the code to run Architecture A
@@ -160,3 +160,7 @@ void loop() {
   delay(2000); 
 }
 ### This is the code to run Architecture C
+
+
+## 5. Team Evidence Artifact
+![Group Collaboration Proof](images/group_evidence2.jpeg)
