@@ -151,12 +151,11 @@ void loop() {
 #### Architecture A Circuit Simulation
 **Simulation Screenshot:** ![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
 **Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
-
-#### B. Physical Prototype
+#### Architecture A Physical Prototype
 - **Hardware Setup:** ![Physical Breadboard Setup](images/physical_prototype.png)
-- **Component Connection Detail:** ![Wiring Detail](images/wiring_closeup.png)
-
+#### Architecture B Physical Prototype
+- **Hardware Setup:** ![Physical Breadboard Setup](images/physical_prototype.png)
 #### Architecture C Circuit Simulation
-**Simulation Screenshot:**
+**Simulation Screenshot:** ![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
 ![Architecture C simulation Diagram](images/Architechture_A_Simulation.png)
 **Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
