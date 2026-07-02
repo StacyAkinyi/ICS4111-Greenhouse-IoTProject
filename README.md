@@ -146,6 +146,18 @@ void loop() {
   delay(2000); 
 }
 ### This is the code to run Architecture C:
-## Architecture Simulations
 
-#### Deliverable 2 http://wokwi.com/projects/467078195158333441
+## 4. System Modelling & Prototyping
+#### Architecture A Circuit Simulation
+**Simulation Screenshot:**
+![Architecture A simulation Diagram](images/Architechture_A_Simulation.png)
+**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+
+#### B. Physical Prototype
+- **Hardware Setup:** ![Physical Breadboard Setup](images/physical_prototype.png)
+- **Component Connection Detail:** ![Wiring Detail](images/wiring_closeup.png)
+
+#### Architecture C Circuit Simulation
+**Simulation Screenshot:**
+![Architecture C simulation Diagram](images/Architechture_A_Simulation.png)
+**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
