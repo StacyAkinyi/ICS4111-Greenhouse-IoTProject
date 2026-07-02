@@ -1,5 +1,4 @@
-# ICS4111-Greenhouse-IoTProject
-# ICS 4111: Embedded Systems & IoT
+# ICS4111: Embedded Systems & IoT - Greenhouse-IoTProject
 ## Semester Project: Deliverable 1
 
 * **Course Cycle:** April - July 2026
@@ -82,5 +81,71 @@ To monitor the criteria above and handle the greenhouse environment safely, the 
 ### Team Evidence Artifact
 ![Group Collaboration Proof](images/group_evidence.jpeg)
 
+## Semester Project: Deliverable 2
+## 1. Project Implementation Overview
+This deliverable details the firmware logic, sensor integration, and communication protocols implemented for the greenhouse monitoring system.
+
+## 2. Firmware Implementation & Logic Flow
+
+* **Sensor Data Acquisition:** Logic implemented for reading DHT22 (temperature/humidity) and MQ-5 (analog gas concentrations).
+* **Voltage Divider Calibration:** Software-side scaling for the MQ-5 sensor readings mapped to the 3.3V ADC range of the ESP32.
+* **Control Logic:** Implementation of threshold-based triggers for the 5V Relay based on climate and safety requirements.
+
+## 3. Code Implementation
+### This is the code to run Architecture A
+
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <DHT.h>
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+#define DHTPIN 15
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+#define MQ5_ANALOG_PIN 34
+
+void setup() {
+  Serial.begin(115200); 
+  dht.begin();
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  
+  display.clearDisplay();
+  display.setTextColor(SSD1306_WHITE);
+  display.setTextSize(1);
+}
+
+void loop() {
+  float humidity = dht.readHumidity();
+  float temperature = dht.readTemperature();
+  int rawGasValue = analogRead(MQ5_ANALOG_PIN); 
+
+  // Output to Serial Monitor for testing 
+  Serial.print("Temp: "); Serial.print(temperature);
+  Serial.print(" C | Hum: "); Serial.print(humidity);
+  Serial.print(" % | Gas Raw: "); Serial.println(rawGasValue);
+
+  // Output to local OLED display screen
+  display.clearDisplay();
+  display.setCursor(0, 0);
+  display.println("GREENHOUSE MONITOR");
+  display.println("-------------------");
+  display.print("Temp: "); display.print(temperature); display.println(" C");
+  display.print("Hum:  "); display.print(humidity); display.println(" %");
+  display.print("Gas:  "); display.print(rawGasValue);
+  display.display();
+
+  delay(2000); 
+}
+### This is the code to run Architecture C:
+## Architecture Simulations
 
 #### Deliverable 2 http://wokwi.com/projects/467078195158333441
