@@ -91,7 +91,21 @@ This deliverable details the firmware logic, sensor integration, and communicati
 * **Voltage Divider Calibration:** Software-side scaling for the MQ-5 sensor readings mapped to the 3.3V ADC range of the ESP32.
 * **Control Logic:** Implementation of threshold-based triggers for the 5V Relay based on climate and safety requirements.
 
-## 3. Code Implementation
+## 3. System Modelling & Prototyping
+#### Architecture A Circuit Simulation
+**Simulation Screenshot:** 
+![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
+**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+#### Architecture A Physical Prototype
+- **Hardware Setup:** ![Physical Breadboard Setup](images/Architecture_A_physical.png)
+#### Architecture B Physical Prototype
+- **Hardware Setup:** ![Physical Breadboard Setup](images/Architecture_B_physical.png)
+#### Architecture C Circuit Simulation
+**Simulation Screenshot:** 
+![Architecture C simulation Diagram](images/Architechture_A_Simulation.png)
+**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+
+## 4. Code Implementation
 ### This is the code to run Architecture A
 
 #include <Wire.h>
@@ -145,17 +159,4 @@ void loop() {
 
   delay(2000); 
 }
-### This is the code to run Architecture C:
-
-## 4. System Modelling & Prototyping
-#### Architecture A Circuit Simulation
-**Simulation Screenshot:** ![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
-**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
-#### Architecture A Physical Prototype
-- **Hardware Setup:** ![Physical Breadboard Setup](images/physical_prototype.png)
-#### Architecture B Physical Prototype
-- **Hardware Setup:** ![Physical Breadboard Setup](images/physical_prototype.png)
-#### Architecture C Circuit Simulation
-**Simulation Screenshot:** ![Architecture A simulation Diagram](images/Architecture_A_Simulation.png)
-![Architecture C simulation Diagram](images/Architechture_A_Simulation.png)
-**Simulation Link:** [Click here to view interactive simulation](http://wokwi.com/projects/467078195158333441)
+### This is the code to run Architecture C
